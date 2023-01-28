@@ -1,0 +1,1 @@
+more 0x07pointer_arry_string
