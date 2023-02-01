@@ -12,7 +12,7 @@ listint_t *find_listint_loop(listint_t *head)
 	loop = link = head;
 	while (loop && link && link->next)
 	{
-		tortoise = loop->next;
+		loop = loop->next;
 		link = link->next->next;
 		if (loop == link)
 		{
@@ -22,7 +22,7 @@ listint_t *find_listint_loop(listint_t *head)
 	}
 	if (!loop || !link || !link->next)
 		return (NULL);
-	while (loope != link)
+	while (loop != link)
 	{
 		loop = loop->next;
 		link = link->next;
