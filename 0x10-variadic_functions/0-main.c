@@ -16,4 +16,3 @@ int main(void)
     printf("%d\n", sum);    
     return (0);
 }
-julien@ubuntu:~/0x0f. variad
