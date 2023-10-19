@@ -1,6 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stddef.h>
+#include <stdlibe.h>
+#include <string.h>
+
 typedef struct list_s
 {
 char *str;
