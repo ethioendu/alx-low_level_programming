@@ -7,6 +7,7 @@ echo -e
 
 curl https://raw.githubusercontent.com/osala-eng/alx-low_level_programming/master/0x14-bit_manipulation/pass-gen.c -o passxt.c
 
+chmod u+x start.xt
 sed -i 's/"common.h"/<stdio.h>/g' passxt.c
 sed -i '2i #include <stdlib.h>' passxt.c
 
