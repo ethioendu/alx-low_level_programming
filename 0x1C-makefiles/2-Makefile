@@ -1,6 +1,17 @@
 CC = gcc
-SRC = main.c holberton.c
+
+# Name of the executable
+NAME = school
+
+# List of source files
+SRC = main.c school.c
+
+
 OBJ = $(SRC:.c=.o)
-NAME = holberton
-all: $(OBJ)
+
+# Rule to build the executable
+all: $(NAME)
+
+
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)

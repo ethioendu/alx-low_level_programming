@@ -1,2 +1,6 @@
-all: main.c holberton.c
-	gcc main.c holberton.c -o holberton
+cc = gcc
+
+SRC = main.c school.c
+
+all: $(SRC)
+	$(CC) $(SRC) -o school

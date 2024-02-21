@@ -1,13 +1,35 @@
+
 CC = gcc
-SRC = main.c holberton.c
+
+
+NAME = school
+
+
+SRC = main.c school.c
+
+
 OBJ = $(SRC:.c=.o)
-NAME = holberton
+
+
 RM = rm -f
-all: $(OBJ)
+
+
+all: $(NAME)
+
+
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
+
+
 clean:
 	$(RM) *~ $(NAME)
+
+# Rule to clean object files
 oclean:
 	$(RM) $(OBJ)
+
+
 fclean: clean oclean
-re: oclean all
+
+# Rule to force recompilation of all source files
+re: fclean all
